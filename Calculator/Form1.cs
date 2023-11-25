@@ -20,20 +20,21 @@ namespace Calculator
         private void btCong_Click(object sender, EventArgs e)
         {
             int a, b, kq;
-            a = int.Parse(txtsoA.Text);
-            b = int.Parse(txtsoB.Text);
+            a = int.Parse(txt1.Text);
+            b = int.Parse(txt2.Text);
             Calculation c = new Calculation(a, b);
+
             kq = c.Execute("+");
             txtKQ.Text = kq.ToString();
-
         }
 
         private void btTru_Click(object sender, EventArgs e)
         {
             int a, b, kq;
-            a = int.Parse(txtsoA.Text);
-            b = int.Parse(txtsoB.Text);
+            a = int.Parse(txt1.Text);
+            b = int.Parse(txt2.Text);
             Calculation c = new Calculation(a, b);
+
             kq = c.Execute("-");
             txtKQ.Text = kq.ToString();
         }
@@ -41,9 +42,10 @@ namespace Calculator
         private void btNhan_Click(object sender, EventArgs e)
         {
             int a, b, kq;
-            a = int.Parse(txtsoA.Text);
-            b = int.Parse(txtsoB.Text);
+            a = int.Parse(txt1.Text);
+            b = int.Parse(txt2.Text);
             Calculation c = new Calculation(a, b);
+
             kq = c.Execute("*");
             txtKQ.Text = kq.ToString();
         }
@@ -51,9 +53,10 @@ namespace Calculator
         private void btChia_Click(object sender, EventArgs e)
         {
             int a, b, kq;
-            a = int.Parse(txtsoA.Text);
-            b = int.Parse(txtsoB.Text);
+            a = int.Parse(txt1.Text);
+            b = int.Parse(txt2.Text);
             Calculation c = new Calculation(a, b);
+
             kq = c.Execute("/");
             txtKQ.Text = kq.ToString();
         }
